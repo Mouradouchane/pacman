@@ -1,0 +1,13 @@
+build/*
+x86/*
+x64/*
+Debug/*
+Release/*
+.git/*
+.vs/*
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+
+
