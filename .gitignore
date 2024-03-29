@@ -1,4 +1,5 @@
-build/*
+build/x86/*.exe
+build/x64/*.exe
 x86/*
 x64/*
 Debug/*

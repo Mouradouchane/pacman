@@ -8,9 +8,14 @@
 
 #include "SDL.h"
 #undef main
+#include "SDL_ttf.h"
 
+#include <string>
 #include <iostream>
 #include <Windows.h>
+
 #include "game.hpp"
+#include "config.hpp"
+#include "global.hpp"
 
 #endif 

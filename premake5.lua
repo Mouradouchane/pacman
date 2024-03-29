@@ -35,11 +35,14 @@ project( project_name )
         system "Windows"
         architecture "x86"
         links { sdl_x86_libs .. "SDL2.lib" }
+        links { sdl_x86_libs .. "SDL2_ttf.lib" }
+
         -- prebuild commands
         prebuildcommands{ 
             "if not exist build ( mkdir build )" ,
             "if not exist build\\x86 ( mkdir build\\x86 )" ,
             "copy \"sdl\\lib\\x86\\SDL2.dll\" \"build\\x86\\\"" ,
+            "copy \"sdl\\lib\\x86\\SDL2_ttf.dll\" \"build\\x86\\\""
         } 
         
     -- windows x64 config
@@ -48,11 +51,14 @@ project( project_name )
         system "Windows"
         architecture "x86_64"
         links { sdl_x64_libs .. "SDL2.lib" }
+        links { sdl_x64_libs .. "SDL2_ttf.lib" }
+
         -- prebuild commands
         prebuildcommands{ 
             "if not exist build ( mkdir build )" ,
             "if not exist build\\x64 ( mkdir build\\x64 )" ,
-            "copy \"sdl\\lib\\x64\\SDL2.dll\" \"build\\x64\\\"" 
+            "copy \"sdl\\lib\\x64\\SDL2.dll\" \"build\\x64\\\"", 
+            "copy \"sdl\\lib\\x64\\SDL2_ttf.dll\" \"build\\x64\\\""
         } 
         
     -- debug configs --
