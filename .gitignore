@@ -5,6 +5,7 @@ Debug/*
 Release/*
 .git/*
 .vs/*
+obj/*
 **.sln
 **.vcxproj
 **.vcxproj.filters
