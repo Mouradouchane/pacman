@@ -1,7 +1,5 @@
 build/x86/*.exe
 build/x64/*.exe
-**.pdb
-**.db
 x86/*
 x64/*
 Debug/*
@@ -13,5 +11,6 @@ obj/*
 **.vcxproj
 **.vcxproj.filters
 **.vcxproj.user
-
-
+**.pdb
+**.db
+**.exe
