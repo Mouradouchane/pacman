@@ -41,8 +41,8 @@ project( project_name )
         prebuildcommands{ 
             "if not exist build ( mkdir build )" ,
             "if not exist build\\x86 ( mkdir build\\x86 )" ,
-            "copy \"sdl\\lib\\x86\\SDL2.dll\" \"build\\x86\\\"" ,
-            "copy \"sdl\\lib\\x86\\SDL2_ttf.dll\" \"build\\x86\\\""
+            --"copy \"sdl\\lib\\x86\\SDL2.dll\" \"build\\x86\\\"" ,
+            --"copy \"sdl\\lib\\x86\\SDL2_ttf.dll\" \"build\\x86\\\""
         } 
         
     -- windows x64 config
@@ -57,8 +57,8 @@ project( project_name )
         prebuildcommands{ 
             "if not exist build ( mkdir build )" ,
             "if not exist build\\x64 ( mkdir build\\x64 )" ,
-            "copy \"sdl\\lib\\x64\\SDL2.dll\" \"build\\x64\\\"", 
-            "copy \"sdl\\lib\\x64\\SDL2_ttf.dll\" \"build\\x64\\\""
+            --"copy \"sdl\\lib\\x64\\SDL2.dll\" \"build\\x64\\\"", 
+            --"copy \"sdl\\lib\\x64\\SDL2_ttf.dll\" \"build\\x64\\\""
         } 
         
     -- debug configs --

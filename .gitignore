@@ -1,5 +1,7 @@
 build/x86/*.exe
 build/x64/*.exe
+**.pdb
+**.db
 x86/*
 x64/*
 Debug/*
