@@ -83,7 +83,7 @@ void game::close() {
 // game main loop 
 void game::run() {
 
-	SDL_Event event;
+	SDL_Event event = {0};
 
 	while (game::running) {
 
