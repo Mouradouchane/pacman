@@ -17,6 +17,8 @@ namespace game {
 
 bool game::init() {
 
+	get_root_path();
+
 	if (SDL_Init(SDL_INIT_TIMER | SDL_INIT_AUDIO | SDL_INIT_VIDEO | SDL_INIT_EVENTS) != 0) {
 		MessageBeep(MB_ICONERROR);
 		MessageBoxA(NULL, "failed to init sdl", game::title.c_str(), MB_OKCANCEL | MB_ICONERROR);
@@ -54,7 +56,7 @@ bool game::init() {
 
 	if (cool_font == nullptr || normal_font == nullptr) {
 		MessageBeep(MB_ICONERROR);
-		MessageBoxA(NULL, "failed to load fonts", game::title.c_str(), MB_OKCANCEL | MB_ICONERROR);
+		MessageBoxA(NULL, TTF_GetError() , game::title.c_str(), MB_OKCANCEL | MB_ICONERROR);
 		return INIT_FAIL;
 	}
 

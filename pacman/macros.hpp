@@ -6,6 +6,8 @@
 #ifndef MACROS_HPP
 #define MACROS_HPP
 
+#define DEBUG
+
 #define INIT_FAIL 0
 #define INIT_SUCCESS 1
 

@@ -14,8 +14,8 @@
 #include <iostream>
 #include <Windows.h>
 
-#include "game.hpp"
 #include "config.hpp"
 #include "global.hpp"
+#include "game.hpp"
 
 #endif 

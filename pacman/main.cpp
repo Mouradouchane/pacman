@@ -3,7 +3,7 @@
 
 int main(int argv, char** args){
 
-	if (game::init() != INIT_FAIL) return EXIT_FAILURE;
+	if (game::init() != INIT_SUCCESS) return EXIT_FAILURE;
 
 	game::run();
 
